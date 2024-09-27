@@ -19,10 +19,15 @@ Acessar a aplicação: Após iniciar o Docker, você pode acessar o Swagger UI p
 URL do Swagger: http://localhost:8080/swagger-ui.html
 
 2. **Verificar se a versão do java esta correta:**
-Foi desenvolvido na versão java 21.
+Foi desenvolvido na versão java 21 oracle GraalJVM
 
-3. **Verificar se o postgres esta de pe:**
+3. **Verificar se o postgres esta online:**
 Para verificar pode ser usado o comando netstat -an | grep 5435
+
+4. **Verificar se o postgres esta de pe:**
+O projeto é um projeto maven com spring pode ser importado no intellij.
+Para buildar o projeto mvm clean install.
+E pode ser startado a partir da IDE.
 
 ### Fluxo do Projeto
 
