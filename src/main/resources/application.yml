@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/sicredi_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Para criar/atualizar as tabelas automaticamente
+    show-sql: true      # Para exibir as queries SQL no console
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  api-docs:
+    enabled: true   # Habilita a geração dos docs da API
+  swagger-ui:
+    enabled: true
+  paths-to-match: /api/**
+
+logging:
+  level:
+    root: INFO
